@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simply Project</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            margin: 0;
+        }
+
+        .box {
+            width: 600px;
+            margin: 80px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px gray;
+
+            animation: fadeIn 1.5s ease;
+        }
+
+        h1 {
+            color: blue;
+            animation: slideDown 1s ease;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 18px;
+            margin: 8px;
+            animation: fadeIn 2s ease;
+        }
+
+        .info {
+            margin-top: 15px;
+            color: green;
+            font-weight: bold;
+        }
+
+        /* animation */
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>Simply Project</h1>
+
+        <h3>Môn: Phát triển hệ điều hành mã nguồn mở</h3>
+
+        <p class="info">
+            Website được xây dựng bằng Python Django Framework
+        </p>
+
+        <h3>Nhóm thực hiện</h3>
+
+        <ul>
+            <li>Nguyễn Nhật Hào</li>
+            <li>Phan Lập Thành</li>
+            <li>Hoàng Anh Huy</li>
+        </ul>
+
+        <p>
+            Trang web demo sử dụng Django + HTML + CSS Animation
+        </p>
+
+    </div>
+
+</body>
+
+</html>
